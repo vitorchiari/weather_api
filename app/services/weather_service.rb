@@ -13,7 +13,7 @@ class WeatherService
     if response && response.success?
       response
     else
-      ErrorHandler.log_error(response)
+      log_error(response)
       nil
     end
   end
@@ -21,6 +21,6 @@ class WeatherService
   private
 
   def fetch_weather(lat, lon)
-    self.class.get({ query: { lat: lat, lon: lon, units: "metric", appid: @api_key } })
+    self.class.get("", { query: { lat: lat, lon: lon, units: "metric", appid: @api_key } })
   end
 end

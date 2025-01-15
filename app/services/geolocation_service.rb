@@ -11,9 +11,9 @@ class GeolocationService
   def geo_location(address)
     response = fetch_geolocation(address)
     if response && response.success? && response["results"].present?
-      response
+      response["results"][0]["geometry"]
     else
-      ErrorHandler.log_error(response)
+      log_error(response)
       nil
     end
   end
@@ -21,6 +21,6 @@ class GeolocationService
   private
 
   def fetch_geolocation(address)
-    self.class.get({ query: { q: address, key: @api_key } })
+    self.class.get("", { query: { q: address, key: @api_key } })
   end
 end
