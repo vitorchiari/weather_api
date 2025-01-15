@@ -108,4 +108,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Add more weather data options to the OpenWeather API response.
 - [ ] Integrate Redis for caching API responses.
 - [ ] Create Frontend (React JS + Tailwind).
-```
