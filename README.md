@@ -99,6 +99,10 @@ http://localhost:3000/weather?address=São+Paulo
 - **OpenWeather**: For retrieving current weather conditions based on the coordinates.
   - [OpenWeather Documentation](https://openweathermap.org/api)
 
+<<<<<<< HEAD
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
+=======
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+>>>>>>> 07d3fb2b529a97769858915a4d2ed44380d93cc7
