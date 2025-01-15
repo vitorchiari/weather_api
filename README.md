@@ -52,7 +52,7 @@ GET /weather?address=São+Paulo
 1. **Clone o repositório** para sua máquina local.
 
 ```bash
-git clone https://github.com/vitorchiari/weather-api.git
+git clone https://github.com/vitorchiari/weather_api.git
 ```
 
 2. **Instale as dependências** do projeto.
