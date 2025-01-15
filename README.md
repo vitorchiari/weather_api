@@ -102,3 +102,10 @@ http://localhost:3000/weather?address=São+Paulo
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
+
+## To-Do List
+
+- [ ] Add more weather data options to the OpenWeather API response.
+- [ ] Integrate Redis for caching API responses.
+- [ ] Create Frontend (React JS + Tailwind).
+```
