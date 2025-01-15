@@ -1,35 +1,33 @@
-# README
-
 # Weather API (Rails)
 
-Esta é uma API simples construída em **Ruby on Rails** que retorna informações sobre o clima atual de um endereço utilizando as APIs **OpenCage** e **OpenWeather**.
+This is a simple API built with **Ruby on Rails** that returns current weather information for a given address using the **OpenCage** and **OpenWeather** APIs.
 
-## Funcionalidades
+## Features
 
-- Recebe um **endereço** como parâmetro.
-- Realiza uma requisição ao serviço **OpenCage** para obter as coordenadas geográficas do endereço.
-- Com as coordenadas, realiza uma requisição ao **OpenWeather** para obter as informações do clima.
-- Retorna as informações do clima atual em formato JSON, incluindo a descrição do clima, temperatura e sensação térmica.
+- Accepts an **address** as a parameter.
+- Makes a request to the **OpenCage** service to get the geographic coordinates of the address.
+- With the coordinates, makes a request to **OpenWeather** to retrieve weather information.
+- Returns current weather data in JSON format, including weather description, temperature, and feels-like temperature.
 
 ## Endpoints
 
 ### 1. `/weather`
 
-#### Método: `GET`
+#### Method: `GET`
 
-Obtém as informações climáticas a partir de um **endereço**.
+Retrieves weather information for a given address.
 
-**Parâmetros de Consulta**:
+**Query Parameters**:
 
-- `address`: O endereço para o qual você deseja consultar o clima.
+- `address`: The address for which you want to query the weather.
 
-**Exemplo de Requisição**:
+**Example Request**:
 
 ```
 GET /weather?address=São+Paulo
 ```
 
-**Exemplo de Resposta**:
+**Example Response**:
 
 ```json
 {
@@ -39,68 +37,68 @@ GET /weather?address=São+Paulo
 }
 ```
 
-## Como rodar localmente
+## How to Run Locally
 
-### Pré-requisitos
+### Prerequisites
 
-- Ruby (versão 2.7 ou superior)
-- Rails (versão 6 ou superior)
+- Ruby (version 2.7 or higher)
+- Rails (version 6 or higher)
 - Bundler
 
-### Passos
+### Steps
 
-1. **Clone o repositório** para sua máquina local.
+1. **Clone the repository** to your local machine.
 
 ```bash
-git clone https://github.com/seu-usuario/weather-api.git
+git clone https://github.com/vitorchiari/weather_api.git
 ```
 
-2. **Instale as dependências** do projeto.
+2. **Install the project's dependencies**.
 
 ```bash
 cd weather-api
 bundle install
 ```
 
-3. **Configure suas chaves de API** para o OpenCage e OpenWeather no arquivo `.env`.
+3. **Configure your API keys** for OpenCage and OpenWeather in the `.env` file.
 
-Crie um arquivo `.env` na raiz do projeto e adicione suas chaves de API:
+Create a `.env` file in the root of the project and add your API keys:
 
 ```
 OPENCAGE_API_KEY=your-opencage-api-key
 OPENWEATHER_API_KEY=your-openweather-api-key
 ```
 
-4. **Inicie o servidor Rails**.
+4. **Start the Rails server**.
 
 ```bash
 rails server
 ```
 
-A API estará rodando em `http://localhost:3000`.
+The API will be running at `http://localhost:3000`.
 
-### Testando a API
+### Testing the API
 
-Agora, você pode testar a API acessando o endpoint `/weather` com um endereço como parâmetro. Exemplo:
+You can now test the API by accessing the `/weather` endpoint with an address as a parameter. Example:
 
 ```
 http://localhost:3000/weather?address=São+Paulo
 ```
 
-## Dependências
+## Dependencies
 
-- **httparty**: Para realizar requisições HTTP aos serviços externos.
-- **dotenv**: Para carregar as variáveis de ambiente de forma segura.
-- **rails**: Framework para criar a API em Ruby on Rails.
+- **httparty**: For making HTTP requests to external services.
+- **dotenv**: For loading environment variables securely.
+- **rails**: Framework for creating the API in Ruby on Rails.
 
-## Serviços de API utilizados
+## APIs Used
 
-- **OpenCage**: Para obter a geolocalização e as coordenadas do endereço.
-  - [Documentação do OpenCage](https://opencagedata.com/)
-  
-- **OpenWeather**: Para obter as condições climáticas atuais com base nas coordenadas.
-  - [Documentação do OpenWeather](https://openweathermap.org/api)
+- **OpenCage**: For geolocating and getting the coordinates of the address.
+  - [OpenCage Documentation](https://opencagedata.com/)
 
-## Licença
+- **OpenWeather**: For retrieving current weather conditions based on the coordinates.
+  - [OpenWeather Documentation](https://openweathermap.org/api)
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
