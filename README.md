@@ -65,8 +65,8 @@ bundle install
 Create a `.env` file in the root of the project and add your API keys:
 
 ```
-OPENCAGE_API_KEY=your-opencage-api-key
-OPENWEATHER_API_KEY=your-openweather-api-key
+OPEN_CAGE_API_KEY=your-opencage-api-key
+OPEN_WEATHER_API_KEY=your-openweather-api-key
 ```
 
 4. **Start the Rails server**.
